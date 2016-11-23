@@ -1,0 +1,4257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69E9A184-8C74-4CEB-844E-358F45C9E71D}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TingVoa.WebView</RootNamespace>
+    <AssemblyName>TingVoa.WebView</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JsonResult.cs" />
+    <Compile Include="JsResult.cs" />
+    <Compile Include="MainActivity.cs" />
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\fonts\ionicons.eot" />
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\fonts\ionicons.ttf" />
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\fonts\ionicons.woff" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\fonts\ionicons.eot" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\fonts\ionicons.ttf" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\fonts\ionicons.woff" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\scss\_ionicons-font.scss" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\scss\_ionicons-icons.scss" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\scss\_ionicons-variables.scss" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\scss\ionicons.scss" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\less\_ionicons-font.less" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\less\_ionicons-icons.less" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\less\_ionicons-variables.less" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\less\ionicons.less" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\builder\build_data.json" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\builder\generate.py" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\builder\manifest.json" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\builder\scripts\eotlitetool.py" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\builder\scripts\generate_font.py" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\builder\scripts\sfnt2woff" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\bower.json" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\component.json" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\composer.json" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\LICENSE" />
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\readme.md" />
+    <None Include="GettingStarted.Xamarin" />
+    <None Include="packages.config" />
+    <None Include="web.config" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\Model1.cs" />
+    <None Include="Views\RazorView.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>RazorView.cs</LastGenOutput>
+    </None>
+    <Compile Include="Services\AudioService.cs" />
+    <Compile Include="Services\WebService.cs" />
+    <Compile Include="Views\RazorView.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RazorView.cshtml</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Views\web.config" />
+    <AndroidAsset Include="Assets\www\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidAsset Include="Assets\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\jquery-2.2.0.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\css\ionic.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\css\ionic.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\fonts\ionicons.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\ionic-angular.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\ionic-angular.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\ionic.bundle.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\ionic.bundle.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\ionic.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\ionic.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\angular\angular-animate.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\angular\angular-animate.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\angular\angular-resource.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\angular\angular-resource.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\angular\angular-sanitize.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\angular\angular-sanitize.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\angular\angular.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\angular\angular.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\angular-ui\angular-ui-router.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\ionic-v1.3.2\js\angular-ui\angular-ui-router.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\utility.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\mystyle.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\myapp.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\templates\home.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\homeController.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\templates\article.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\articleController.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\alert-circled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\alert.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-add-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-add.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-alarm-clock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-alert.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-apps.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-archive.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-back.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-dropdown-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-dropdown.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-dropleft-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-dropleft.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-dropright-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-dropright.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-dropup-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-dropup.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-forward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-arrow-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-attach.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-bar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-bicycle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-boat.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-bookmark.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-bulb.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-bus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-calendar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-call.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-camera.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-cancel.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-car.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-cart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-chat.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-checkbox-blank.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-checkbox-outline-blank.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-checkbox-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-checkbox.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-checkmark-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-clipboard.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-close.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-cloud-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-cloud-done.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-cloud-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-cloud.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-color-palette.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-compass.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-contact.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-contacts.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-contract.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-create.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-delete.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-desktop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-document.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-done-all.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-done.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-download.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-drafts.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-exit.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-expand.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-favorite-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-favorite.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-film.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-folder-open.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-folder.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-funnel.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-globe.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-hand.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-hangout.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-happy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-home.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-image.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-laptop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-list.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-locate.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-lock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-mail.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-map.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-menu.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-microphone-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-microphone.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-more-horizontal.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-more-vertical.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-navigate.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-notifications-none.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-notifications-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-notifications.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-open.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-options.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-people.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-person-add.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-person.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-phone-landscape.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-phone-portrait.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-pin.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-plane.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-playstore.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-print.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-radio-button-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-radio-button-on.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-refresh.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-remove-circle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-remove.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-restaurant.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-sad.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-search.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-send.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-settings.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-share-alt.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-share.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-star-half.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-star-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-star.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-stopwatch.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-subway.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-sunny.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-sync.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-textsms.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-time.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-train.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-unlock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-upload.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-volume-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-volume-mute.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-volume-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-volume-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-walk.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-warning.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-watch.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\android-wifi.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\aperture.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\archive.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-down-a.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-down-b.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-down-c.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-expand.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-graph-down-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-graph-down-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-graph-up-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-graph-up-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-left-a.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-left-b.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-left-c.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-move.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-resize.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-return-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-return-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-right-a.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-right-b.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-right-c.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-shrink.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-swap.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-up-a.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-up-b.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\arrow-up-c.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\asterisk.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\at.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\backspace-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\backspace.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\bag.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\battery-charging.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\battery-empty.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\battery-full.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\battery-half.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\battery-low.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\beaker.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\beer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\bluetooth.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\bonfire.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\bookmark.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\bowtie.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\briefcase.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\bug.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\calculator.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\calendar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\camera.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\card.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\cash.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\chatbox-working.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\chatbox.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\chatboxes.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\chatbubble-working.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\chatbubble.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\chatbubbles.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\checkmark-circled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\checkmark-round.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\checkmark.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\chevron-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\chevron-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\chevron-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\chevron-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\clipboard.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\clock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\close-circled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\close-round.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\close.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\closed-captioning.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\cloud.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\code-download.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\code-working.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\code.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\coffee.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\compass.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\compose.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\connection-bars.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\contrast.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\crop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\cube.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\disc.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\document-text.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\document.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\drag.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\earth.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\easel.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\edit.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\egg.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\eject.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\email-unread.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\email.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\erlenmeyer-flask-bubbles.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\erlenmeyer-flask.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\eye-disabled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\eye.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\female.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\filing.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\film-marker.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\fireball.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\flag.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\flame.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\flash-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\flash.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\folder.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\fork-repo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\fork.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\forward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\funnel.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\gear-a.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\gear-b.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\grid.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\hammer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\happy-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\happy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\headphone.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\heart-broken.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\heart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\help-buoy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\help-circled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\help.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\home.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\icecream.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\image.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\images.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\information-circled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\information.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ionic.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-alarm-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-alarm.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-albums-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-albums.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-americanfootball-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-americanfootball.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-analytics-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-analytics.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-arrow-back.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-arrow-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-arrow-forward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-arrow-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-arrow-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-arrow-thin-down.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-arrow-thin-left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-arrow-thin-right.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-arrow-thin-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-arrow-up.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-at-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-at.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-barcode-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-barcode.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-baseball-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-baseball.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-basketball-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-basketball.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-bell-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-bell.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-body-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-body.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-bolt-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-bolt.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-book-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-book.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-bookmarks-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-bookmarks.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-box-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-box.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-briefcase-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-briefcase.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-browsers-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-browsers.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-calculator-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-calculator.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-calendar-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-calendar.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-camera-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-camera.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cart-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-chatboxes-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-chatboxes.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-chatbubble-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-chatbubble.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-checkmark-empty.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-checkmark-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-checkmark.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-circle-filled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-circle-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-clock-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-clock.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-close-empty.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-close-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-close.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cloud-download-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cloud-download.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cloud-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cloud-upload-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cloud-upload.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cloud.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cloudy-night-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cloudy-night.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cloudy-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cloudy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cog-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-cog.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-color-filter-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-color-filter.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-color-wand-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-color-wand.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-compose-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-compose.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-contact-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-contact.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-copy-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-copy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-crop-strong.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-crop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-download-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-download.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-drag.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-email-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-email.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-eye-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-eye.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-fastforward-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-fastforward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-filing-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-filing.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-film-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-film.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-flag-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-flag.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-flame-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-flame.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-flask-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-flask.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-flower-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-flower.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-folder-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-folder.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-football-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-football.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-game-controller-a-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-game-controller-a.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-game-controller-b-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-game-controller-b.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-gear-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-gear.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-glasses-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-glasses.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-grid-view-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-grid-view.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-heart-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-heart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-help-empty.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-help-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-help.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-home-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-home.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-infinite-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-infinite.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-information-empty.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-information-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-information.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-ionic-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-keypad-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-keypad.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-lightbulb-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-lightbulb.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-list-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-list.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-location-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-location.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-locked-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-locked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-loop-strong.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-loop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-medical-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-medical.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-medkit-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-medkit.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-mic-off.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-mic-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-mic.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-minus-empty.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-minus-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-minus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-monitor-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-monitor.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-moon-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-moon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-more-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-more.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-musical-note.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-musical-notes.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-navigate-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-navigate.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-nutrition-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-nutrition.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-paper-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-paper.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-paperplane-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-paperplane.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-partlysunny-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-partlysunny.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pause-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pause.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-paw-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-paw.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-people-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-people.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-person-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-person.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-personadd-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-personadd.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-photos-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-photos.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pie-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pie.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pint-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pint.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-play-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-play.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-plus-empty.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-plus-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-plus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pricetag-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pricetag.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pricetags-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pricetags.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-printer-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-printer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pulse-strong.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-pulse.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-rainy-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-rainy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-recording-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-recording.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-redo-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-redo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-refresh-empty.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-refresh-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-refresh.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-reload.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-reverse-camera-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-reverse-camera.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-rewind-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-rewind.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-rose-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-rose.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-search-strong.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-search.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-settings-strong.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-settings.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-shuffle-strong.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-shuffle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-skipbackward-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-skipbackward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-skipforward-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-skipforward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-snowy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-speedometer-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-speedometer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-star-half.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-star-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-star.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-stopwatch-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-stopwatch.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-sunny-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-sunny.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-telephone-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-telephone.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-tennisball-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-tennisball.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-thunderstorm-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-thunderstorm.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-time-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-time.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-timer-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-timer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-toggle-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-toggle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-trash-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-trash.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-undo-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-undo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-unlocked-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-unlocked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-upload-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-upload.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-videocam-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-videocam.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-volume-high.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-volume-low.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-wineglass-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-wineglass.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-world-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ios-world.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ipad.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\iphone.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ipod.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\jet.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\key.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\knife.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\laptop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\leaf.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\levels.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\lightbulb.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\link.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\load-a.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\load-b.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\load-c.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\load-d.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\location.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\lock-combination.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\locked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\log-in.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\log-out.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\loop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\magnet.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\male.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\man.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\map.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\medkit.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\merge.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\mic-a.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\mic-b.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\mic-c.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\minus-circled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\minus-round.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\minus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\model-s.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\monitor.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\more.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\mouse.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\music-note.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\navicon-round.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\navicon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\navigate.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\network.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\no-smoking.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\nuclear.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\outlet.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\paintbrush.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\paintbucket.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\paper-airplane.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\paperclip.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\pause.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\person-add.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\person-stalker.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\person.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\pie-graph.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\pin.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\pinpoint.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\pizza.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\plane.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\planet.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\play.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\playstation.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\plus-circled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\plus-round.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\plus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\podium.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\pound.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\power.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\pricetag.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\pricetags.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\printer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\pull-request.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\qr-scanner.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\quote.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\radio-waves.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\record.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\refresh.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\reply-all.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\reply.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ribbon-a.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\ribbon-b.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\sad-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\sad.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\scissors.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\search.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\settings.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\share.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\shuffle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\skip-backward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\skip-forward.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-android-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-android.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-angular-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-angular.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-apple-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-apple.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-bitcoin-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-bitcoin.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-buffer-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-buffer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-chrome-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-chrome.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-codepen-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-codepen.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-css3-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-css3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-designernews-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-designernews.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-dribbble-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-dribbble.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-dropbox-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-dropbox.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-euro-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-euro.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-facebook-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-facebook.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-foursquare-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-foursquare.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-freebsd-devil.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-github-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-github.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-google-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-google.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-googleplus-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-googleplus.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-hackernews-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-hackernews.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-html5-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-html5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-instagram-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-instagram.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-javascript-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-javascript.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-linkedin-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-linkedin.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-markdown.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-nodejs.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-octocat.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-pinterest-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-pinterest.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-python.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-reddit-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-reddit.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-rss-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-rss.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-sass.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-skype-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-skype.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-snapchat-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-snapchat.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-tumblr-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-tumblr.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-tux.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-twitch-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-twitch.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-twitter-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-twitter.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-usd-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-usd.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-vimeo-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-vimeo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-whatsapp-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-whatsapp.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-windows-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-windows.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-wordpress-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-wordpress.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-yahoo-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-yahoo.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-yen-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-yen.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-youtube-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\social-youtube.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\soup-can-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\soup-can.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\speakerphone.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\speedometer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\spoon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\star.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\stats-bars.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\steam.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\stop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\thermometer.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\thumbsdown.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\thumbsup.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\toggle-filled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\toggle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\transgender.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\trash-a.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\trash-b.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\trophy.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\tshirt-outline.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\tshirt.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\umbrella.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\university.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\unlocked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\upload.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\usb.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\videocamera.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\volume-high.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\volume-low.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\volume-medium.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\volume-mute.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\wand.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\waterdrop.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\wifi.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\wineglass.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\woman.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\wrench.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\src\xbox.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\css\ionicons.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\css\ionicons.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\fonts\ionicons.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\alert-circled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-add-contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-arrow-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-arrow-down-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-arrow-down-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-arrow-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-arrow-up-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-arrow-up-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-battery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-contacts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-developer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-display.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-drawer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-dropdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-forums.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-friends.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-keypad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-lightbulb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-locate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-microphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-mixer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-playstore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-promotion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-reminder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-social-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-social.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-stair-drawer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-stopwatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-storage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-system-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-system-home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-system-windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-user-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\android-wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\aperture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-down-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-down-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-down-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-graph-down-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-graph-down-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-graph-up-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-graph-up-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-left-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-left-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-left-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-resize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-return-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-return-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-right-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-right-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-right-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-shrink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-swap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-up-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-up-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\arrow-up-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\asterisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\at.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\battery-charging.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\battery-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\battery-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\battery-half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\battery-low.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\beaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\beer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\bluetooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\bonfire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\chatbox-working.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\chatbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\chatboxes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\chatbubble-working.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\chatbubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\chatbubbles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\checkmark-circled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\checkmark-round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\chevron-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\chevron-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\chevron-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\chevron-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\close-circled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\close-round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\closed-captioning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\code-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\code-working.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\coffee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\compass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\compose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\connection-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\contrast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\cube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\disc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\document-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\drag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\eject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\eye-disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\filing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\film-marker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\fireball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\flame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\flash-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\flask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\fork-repo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\fork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\funnel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\game-controller-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\game-controller-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\gear-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\gear-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\hammer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\headphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\heart-broken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\help-buoy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\help-circled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\icecream.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\icon-social-google-plus-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\icon-social-google-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\information-circled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ionic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-alarm-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-albums-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-albums.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-americanfootball-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-americanfootball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-analytics-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-analytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-arrow-back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-arrow-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-arrow-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-arrow-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-arrow-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-arrow-thin-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-arrow-thin-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-arrow-thin-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-arrow-thin-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-at-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-at.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-barcode-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-baseball-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-baseball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-basketball-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-basketball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-bell-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-bolt-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-bolt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-bookmarks-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-bookmarks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-box-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-briefcase-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-browsers-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-browsers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-calculator-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-calendar-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-camera-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cart-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-chatboxes-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-chatboxes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-chatbubble-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-chatbubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-checkmark-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-checkmark-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-circle-filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-circle-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-clock-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-close-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-close-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cloud-download-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cloud-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cloud-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cloud-upload-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cloud-upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cloudy-night-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cloudy-night.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cloudy-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cog-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-cog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-compose-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-compose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-contact-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-copy-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-download-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-drag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-email-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-eye-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-fastforward-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-fastforward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-filing-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-filing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-film-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-flag-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-folder-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-football-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-football.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-gear-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-glasses-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-glasses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-heart-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-help-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-help-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-home-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-infinite-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-infinite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-information-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-information-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-ionic-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-keypad-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-keypad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-lightbulb-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-lightbulb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-location-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-locked-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-loop-strong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-loop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-medkit-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-medkit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-mic-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-mic-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-mic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-minus-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-minus-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-monitor-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-moon-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-more-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-musical-note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-musical-notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-navigate-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-navigate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-paper-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-paperplane-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-paperplane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-partlysunny-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-partlysunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-pause-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-paw-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-paw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-people-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-person-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-personadd-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-personadd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-photos-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-photos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-pie-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-pie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-play-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-plus-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-plus-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-pricetag-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-pricetag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-pricetags-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-pricetags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-printer-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-pulse-strong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-pulse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-rainy-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-rainy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-recording-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-recording.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-redo-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-refresh-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-refresh-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-reverse-camera-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-reverse-camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-rewind-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-rewind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-search-strong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-settings-strong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-shrink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-skipbackward-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-skipbackward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-skipforward-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-skipforward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-snowy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-speedometer-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-speedometer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-star-half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-star-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-stopwatch-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-stopwatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-sunny-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-sunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-telephone-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-telephone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-tennisball-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-tennisball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-thunderstorm-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-thunderstorm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-time-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-timer-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-toggle-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-toggle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-trash-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-undo-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-unlocked-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-upload-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-videocam-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-videocam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-volume-high.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-volume-low.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-wineglass-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-wineglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-world-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ios7-world.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ipad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\iphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ipod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\jet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\knife.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\laptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\leaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\levels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\lightbulb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\load-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\load-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\load-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\load-d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\log-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\log-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\loop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\magnet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\medkit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\mic-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\mic-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\mic-c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\minus-circled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\minus-round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\model-s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\music-note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\navicon-round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\navicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\navigate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\no-smoking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\nuclear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\outlet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\paper-airplane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\paperclip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\person-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\person-stalker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\pie-graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\pinpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\planet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\playstation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\plus-circled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\plus-round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\podium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\pound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\pricetag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\pricetags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\pull-request.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\qr-scanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\quote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\radio-waves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\reply-all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\reply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ribbon-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\ribbon-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\shuffle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\skip-backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\skip-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-android-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-android.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-apple-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-bitcoin-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-bitcoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-buffer-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-buffer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-designernews-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-designernews.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-dribbble-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-dribbble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-dropbox-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-dropbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-facebook-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-foursquare-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-foursquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-freebsd-devil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-github-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-google-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-googleplus-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-googleplus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-hackernews-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-hackernews.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-instagram-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-linkedin-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-pinterest-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-pinterest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-reddit-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-reddit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-rss-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-rss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-skype-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-skype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-tumblr-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-tumblr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-tux.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-twitter-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-usd-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-usd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-vimeo-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-vimeo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-windows-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-wordpress-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-wordpress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-yahoo-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-yahoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-youtube-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\social-youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\speakerphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\speedometer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\spoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\stats-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\steam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\thermometer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\thumbsdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\thumbsup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\toggle-filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\toggle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\trash-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\trash-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\trophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\umbrella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\university.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\usb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\videocamera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\volume-high.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\volume-low.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\volume-medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\volume-mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\wand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\waterdrop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\wineglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\png\512\xbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\builder\cheatsheet\icon-row.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\builder\cheatsheet\template.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\.gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\cheatsheet.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\styles\ionicons-2.0.1\yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\jquery-2.2.4.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\templates\config.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\www\scripts\external.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
